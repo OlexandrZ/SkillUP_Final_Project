@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Crimson Pro', serif;
+}
+
+.firstSection {
+  min-height: 400px;
+}
+
+.firstText {
+  padding-top: 150px;
+  text-align: center;
+  color: white;
+}
+
+.ourTeamText {
+    padding: 40px;
+    color: black;
+}
+
+.btnPlans {
+  padding: 5px 30px;
+  margin: 15px;
+  font-size: 1rem;
+  color: white;
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 10px;
+}
+
+.btnPlans:hover {
+  
+  background-color: rgba(10, 78, 143, 0.9);
+  border-radius: 20px;
+  color: black;
+}
+
+.buttonLink {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.buttonLink:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.block_1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.cloudImage {
+  height: 400px;
+  width: 100%;
+  margin: 2%;
+}
+
+.block_2{
+  grid-column-start: 2;
+  grid-column-end: 2; 
+}
+
+.cloudText{
+  text-align: center;
+  padding-top: 15%;
+}
+
+.cloudText_2 {
+  text-align: center;
+  margin: 0 10%;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 767px) {
+  .cloudText_2 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+/* Pricing */
+
+  .pricing .card {
+    border: none;
+    border-radius: 1rem;
+    transition: all 0.2s;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .pricing hr {
+    margin: 1.5rem 0;
+  }
+  
+  .pricing .card-title {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+  }
+  
+  .pricing .card-price {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .pricing .card-price .period {
+    font-size: 0.8rem;
+  }
+  
+  .pricing ul li {
+    margin-bottom: 1rem;
+  }
+  
+  .pricing .text-muted {
+    opacity: 0.7;
+  }
+  
+  .pricing .btn {
+    font-size: 80%;
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    opacity: 0.7;
+    transition: all 0.2s;
+  }
+  
+  /* Hover Effects on Card */
+  
+  @media (min-width: 992px) {
+    .pricing .card:hover {
+      margin-top: -.25rem;
+      margin-bottom: .25rem;
+      box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    }
+    .pricing .card:hover .btn {
+      opacity: 1;
+    }
+   }   /* Pricing */
+
+   *, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .mainBG{
+   background:url(../img/mainBG.jpg);
+    background-size:cover;
+    background-position:center center;
+    background-attachment:fixed;
+  }
+  
+  .secondBG{
+    background:url(../img/secondBG.jpg);
+     background-size:cover;
+     background-position:center center;
+     background-attachment:fixed;
+   }
+
+  .whyUsText {
+    padding: 50px;
+    color: #fff;
+  }
+
+  .whiteText{
+    color: #fff;
+  }
+
+  .benefits {
+    width: 33.3%;
+    padding: 15px;
+  }
+  .bg, .content{
+    text-align:center; 
+    position:relative;
+    width: 100%;
+  }
+  
+  .benefitImage {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+  }
+  .inner{
+    min-height:600px;
+    position: relative;
+  }
+  
+  .copy{
+    position:absolute; 
+    top:50%; 
+    height:10em; 
+    margin-top:-5em; 
+    width:100%;
+  }
+
+  p.grey-text {
+    font-size: 15px;
+    line-height: 30px;
+    color: #5c666a;
+    letter-spacing: 0.15px;
+}
+
+.form {
+    min-height: 600px;
+    background-color: #ecf1f7;
+    padding: 90px 0 100px;
+}
+a {
+    font-size: 14px;
+}
+a.contact {
+    font-size: 16px;
+    font-weight: 600;
+    color: whitesmoke;
+    letter-spacing: 0.16px;
+    text-decoration: underline #2b3a40;
+}
+
+.input-field {
+    height: 54px;
+    margin-bottom: 28px;
+    margin-top: 17px;
+}
+
+.input-area {
+    min-height: 124px;
+    height: 124px;
+    padding-bottom: 35px;
+}
+
+::-moz-placeholder { 
+    opacity: 1;
+}
+
+:placeholder-shown {
+    padding-left: 28px;
+}
+
+.input-field, .input-area, ::placeholder {
+    font-size: 15px;
+    font-weight: 500;
+    color: #0b0f12;
+    padding: 20px 28px;
+}
+
+.input-area, .input-field {
+    border: 2px solid #e3e7ea;
+}
+
+.ask {
+    width: 151px;
+    height: 48px;
+    background-color: #67b930;
+    margin-top: 35px;
+    color: #fff;
+}
+
+.instagram {
+  border-radius: 40px;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+
+.lastText {
+  margin-bottom: -30px;
+}
+
+footer {
+  margin-top: -70px;
+}
